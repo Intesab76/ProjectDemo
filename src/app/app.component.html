@@ -1,0 +1,13 @@
+<!-- 
+<button routerLink = "/Home">Home</button>
+<button routerLink = "/SignUp">Sign Up</button>
+<button routerLink = "/Login">Login</button>
+<button routerLink = "/AboutUs">About Us</button>
+<button routerLink = "/Contact">Contact</button> -->
+
+<button [ngStyle] = "{'font-size':'24px'}"  *ngFor =  'let r of routes' [routerLink] = "r.url"> {{r.linkName}}</button>
+
+
+
+<router-outlet></router-outlet>
+<!-- <app-login></app-login> -->

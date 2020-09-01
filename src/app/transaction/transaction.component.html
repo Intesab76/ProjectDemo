@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transaction.component.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Internet Banking System</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transaction Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="transaction.component.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+    <h2>Transaction Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Current Account Balance:</label><br>
+        <strong type class="input">Current Account is   15000  </strong>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Enter Amount To Add:</label>
+        <input type="number" class="input" placeholder="Enter Amount">
+        <i class="fas fa-rupee-sign"></i>
+      </div>
+      <div class="btn">
+        <button (click) = 'putAmount()'>Add Money</button>
+        <p *ngIf = 'boolVar'><b>{{show}}</b></p>
+      </div> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="sign-up.component.css">
+  </head>
+  <body>
+<div class="login-box"><br><br><br><br><br><br><br><br><br><br>
+  <h1>Sign Up</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="First name">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Last name">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-users"></i>
+    <input type="text" placeholder="Username">
+  </div>
+  <br>
+    <div class="Gender">
+      <label for="male" 
+      ><input
+          type="radio"
+          name="gender"
+          id="male"
+        /> Male </label
+      >
+      <label for="female"
+        ><input
+          type="radio"
+          name="gender"
+          id="female"
+        /> Female </label
+      >
+      <label for="others" 
+        ><input
+          type="radio"
+          name="gender"
+          id="others"
+        /> Others</label
+      >
+    </div>
+  <div class="textbox">
+    <i class="fas fa-envelope"></i>
+    <input type="text" placeholder="Email">
+  </div>
+
+  
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password">
+  </div>
+
+    
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Confirm Password">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-calendar"></i>
+    <input type="date" placeholder="dd-mm-yyyy">
+  </div><br>
+  <input type="button" class="btn" value="Sign Up" (click) = 'postData()'>
+  <p class="message"><b>{{msg1}}</b></p>
+  <p>{{first}}</p>
+  <p>{{msg}}</p>
+</div>
+  </body>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.component.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Internet Banking System</label>
+      <ul>
+        <li><button (click) = 'getHome()'>Home</button></li>
+        <li><button (click) = 'getLog()'>Login</button></li>
+        <li><button class="active" (click)  ='getSign()'>Sign Up</button></li>
+        <li><button (click) = 'getContact()'>Contact</button></li>
+        <li><button (click) = 'aboutUs()'>About us</button></li>
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+
+

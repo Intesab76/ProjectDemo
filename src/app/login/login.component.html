@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+  </head>
+  <body>
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input  type="text" placeholder="Username" [(ngModel)] = "userVal"><br>
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password"  [(ngModel)] = "passVal">
+  </div>
+
+  <input type="button" class="btn" value="Sign in" (click) = 'checkLogin()'>
+</div>
+  </body>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.component.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Internet Banking System</label>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a class="active" href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <section></section>
+    <div class="model">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p *ngIf = 'invalidLogin'> User Name is ::  {{userVal}}</p><br>
+    <p *ngIf = 'invalidLogin'> Password Entered is :: {{passVal}}</p><br>
+    <p *ngIf = 'invalidLogin'>The whole Data in the API is :: <b><em> {{arr}}</em></b></p>
+</div> 
+
+  </body>
+</html>

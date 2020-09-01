@@ -1,0 +1,14 @@
+.HTwo{
+    background-color: aquamarine;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    padding: 60px;
+    text-align: center;
+
+}
+.other{
+    color: darkred;
+    background-color: burlywood;
+    padding: 80px;
+}
